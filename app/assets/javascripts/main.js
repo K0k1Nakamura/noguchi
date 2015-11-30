@@ -67,7 +67,7 @@ jQuery(document).ready(function($) {
   });
 
   function createSliderDots(container){
-    var dotsWrapper = $('<ol class="cd-dots"></ol>').insertAfter(container.children('a'));
+    var dotsWrapper = $('<ol class="cd-dots"></ol>').insertAfter(container.children('div'));
     container.find('.cd-item-wrapper li').each(function(index){
       var dotWrapper = (index == 0) ? $('<li class="selected"></li>') : $('<li></li>'),
       dot = $('<a href="#0"></a>').appendTo(dotWrapper);
@@ -109,22 +109,16 @@ jQuery(document).ready(function($) {
 
     $('.cd-item-info').empty();
 
-    if( selectedItem.data('sale') ) {
-      // if item is on sale - cross old price and add new one
-      // priceTag.addClass('on-sale');
+    if( selectedItem.data('tidimi') ) {
+      var tidimi = $('<em class="cd-new-price">dddd</em>');
+      tidimi.appendTo('.cd-item-info');
+      setTimeout(function(){ tidimi.addClass('is-visible'); }, 100);
+    }
+
+    if( selectedItem.data('misogi') ) {
       var misogi = $('<em class="cd-new-price">dddd</em>');
-      var misogi2 = $('<em class="cd-new-price">dddd</em>');
       misogi.appendTo('.cd-item-info');
-      misogi2.appendTo('.cd-item-info');
-      // var newPriceTag = ( priceTag.next('.cd-new-price').length > 0 ) ? priceTag.next('.cd-new-price') : $('<em class="cd-new-price"></em>').insertAfter(priceTag);
-      // newPriceTag.text(selectedItem.data('price'));
       setTimeout(function(){ misogi.addClass('is-visible'); }, 100);
-      setTimeout(function(){ misogi2.addClass('is-visible'); }, 100);
-    } else {
-      // if item is not on sale - remove cross on old price and sale price
-      priceTag.removeClass('on-sale').next('.cd-new-price').removeClass('is-visible').on('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
-        priceTag.next('.cd-new-price').remove();
-      });
     }
   }
 });
