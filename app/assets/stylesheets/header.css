@@ -2,8 +2,9 @@
 
 div#cssmenu {
   position:fixed;
-  z-index: 15;
+  z-index: 1000;
   width: 100%;
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
 }
 #cssmenu,
 #cssmenu ul,
@@ -189,6 +190,7 @@ div#cssmenu {
 @media all and (max-width: 768px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
   #cssmenu {
     width: 100%;
+    
   }
   #cssmenu ul {
     width: 100%;
@@ -262,6 +264,7 @@ div#cssmenu {
     border-top: 2px solid #dddddd;
     border-bottom: 2px solid #dddddd;
     content: '';
+    box-sizing: border-box;
   }
   #cssmenu #menu-button:before {
     position: absolute;

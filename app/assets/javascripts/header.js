@@ -68,6 +68,6 @@
       title: "Menu",
       format: "multitoggle"
     });
-    $("#cssmenu").next('ul').hide().removeClass('open');
+    // $("#cssmenu").next('ul').hide().removeClass('open');
   });
 })(jQuery);

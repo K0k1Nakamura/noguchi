@@ -1,10 +1,21 @@
 jQuery(document).ready(function($) {
+
+  $.createSliderDots = function (container){
+    var dotsWrapper = $('<ol class="cd-dots"></ol>').insertAfter(container.children('div'));
+    container.find('.cd-item-wrapper li').each(function(index){
+      var dotWrapper = (index == 0) ? $('<li class="selected"></li>') : $('<li></li>'),
+      dot = $('<a href="#0"></a>').appendTo(dotWrapper);
+    dotWrapper.appendTo(dotsWrapper);
+    dot.text(index+1);
+    });
+    return dotsWrapper.children('li');
+  }
   var galleryItems = $('.cd-gallery').children('li');
 
   galleryItems.each(function(){
     var container = $(this),
     // create slider dots
-    sliderDots = createSliderDots(container);
+    sliderDots = $.createSliderDots(container);
   //check if item is on sale
   updatePrice(container, 0);
 
@@ -66,16 +77,6 @@ jQuery(document).ready(function($) {
   });
   });
 
-  function createSliderDots(container){
-    var dotsWrapper = $('<ol class="cd-dots"></ol>').insertAfter(container.children('div'));
-    container.find('.cd-item-wrapper li').each(function(index){
-      var dotWrapper = (index == 0) ? $('<li class="selected"></li>') : $('<li></li>'),
-      dot = $('<a href="#0"></a>').appendTo(dotWrapper);
-    dotWrapper.appendTo(dotsWrapper);
-    dot.text(index+1);
-    });
-    return dotsWrapper.children('li');
-  }
 
   function hoverItem(item, bool) {
     ( item.hasClass('move-right') )
@@ -110,13 +111,13 @@ jQuery(document).ready(function($) {
     $('.cd-item-info').empty();
 
     if( selectedItem.data('tidimi') ) {
-      var tidimi = $('<em class="cd-new-price">dddd</em>');
+      var tidimi = $('<a href="#" class="cd-new-price"><img src="assets/wa_btn.gif" alt=""></a>');
       tidimi.appendTo('.cd-item-info');
       setTimeout(function(){ tidimi.addClass('is-visible'); }, 100);
     }
 
     if( selectedItem.data('misogi') ) {
-      var misogi = $('<em class="cd-new-price">dddd</em>');
+      var misogi = $('<a href="#" class="cd-new-price"><img src="assets/wa_btn.gif" alt=""></a>');
       misogi.appendTo('.cd-item-info');
       setTimeout(function(){ misogi.addClass('is-visible'); }, 100);
     }

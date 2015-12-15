@@ -1,6 +1,6 @@
-class CreateItems < ActiveRecord::Migration
+class CreateShirts< ActiveRecord::Migration
   def change
-    create_table :items do |t|
+    create_table :shirts do |t|
       t.string :image_url
       t.string :link_url
       t.integer :category

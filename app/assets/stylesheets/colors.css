@@ -31,6 +31,16 @@ div#store_area {
   z-index: -100;
 }
 
+.pattern {
+    background-image:url(pattern.png);
+    background-repeat: repeat;
+    background-attachment:scroll;
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0
+}
 
 .overlay {
   width: 100vw;
@@ -51,7 +61,7 @@ div#store_area {
   width: 100%;
   height: 100%;
   position: fixed;
-  -webkit-filter: blur(1px);
+  /* -webkit-filter: blur(1px); */
   /* background: #333333; */
   /* box-shadow: 0 0 30px #2e2e2e inset; */
 }
@@ -283,13 +293,14 @@ div#store_area {
   height: 700px;
   transform: translatex(-50%)translateY(-50%);
   /* background: #333333; */
-  background-image: url("akiwomankitu.jpg");
+  /* background-image: url("akiwomankitu.jpg"); */
   /* background-size: cover; */
   /* background-attachment: fixed; */
+  background-color: #fff;
   /* background: radial-gradient(ellipse farthest-side at center, #ffffff, #cccccc); */
-  -webkit-filter: blur(3px);
+  /* -webkit-filter: blur(3px); */
   border-radius: 50%;
-  box-shadow: 0 0 20px -5px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 0 20px -5px rgba(0, 0, 0, 0.2); */
 }
 
 .btn.hide {

@@ -1,0 +1,43 @@
+.static_container {
+  padding: 55px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  font-family:
+  "ヒラギノ明朝 ProN W3",
+  "HiraMinProN-W3",
+  "HG明朝E",
+  "ＭＳ Ｐ明朝",
+  "MS PMincho",
+  "MS 明朝",
+  serif;
+  color: #fff;
+  line-height:1.6;
+  letter-spacing:0.07em;
+  p { text-align: left;}
+}
+
+.harf {
+  max-width: 49%;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  display: inline-block;
+}
+
+.embed_wrapper{
+   /* margin: 20px auto; */
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.embed_wrapper iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
