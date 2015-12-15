@@ -29,6 +29,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+
 gem 'bourbon'
 
 # gem 'rails-assets-vue', source: 'https://rails-assets.org'
@@ -40,10 +41,10 @@ group :development, :test do
   gem 'pry-doc'    # methodを表示
   gem 'pry-byebug' # デバッグを実施(Ruby 2.0以降で動作する)
   gem 'pry-stack_explorer' # スタックをたどれる
+  # Use sqlite3 as the database for Active Record
+  gem 'sqlite3'
 end
 group :development do
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
 
