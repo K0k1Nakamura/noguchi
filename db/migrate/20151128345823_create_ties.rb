@@ -3,7 +3,7 @@ class CreateTies < ActiveRecord::Migration
     create_table :ties do |t|
       t.string :image_url
       t.string :link_url
-      t.integer :category
+      t.integer :color
       t.boolean :tidimi
       t.boolean :misogi
 
