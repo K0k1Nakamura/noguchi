@@ -136,7 +136,8 @@ a.big-background-btn {
 }
 
 .big-background-default-image {
-    background:url(sunset.jpg);
+    /* 動画が読み込まれない場合の背景がここになる */
+    /* background:url(sunset.jpg); */
     background-repeat:no-repeat;
     background-position:center center;
     background-size:cover;

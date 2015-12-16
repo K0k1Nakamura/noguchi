@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 20151128345845) do
   create_table "jackets", force: :cascade do |t|
     t.string   "image_url"
     t.string   "link_url"
-    t.integer  "category"
+    t.integer  "color"
     t.boolean  "tidimi"
     t.boolean  "misogi"
     t.datetime "created_at", null: false
@@ -26,7 +26,7 @@ ActiveRecord::Schema.define(version: 20151128345845) do
   create_table "shirts", force: :cascade do |t|
     t.string   "image_url"
     t.string   "link_url"
-    t.integer  "category"
+    t.integer  "color"
     t.boolean  "tidimi"
     t.boolean  "misogi"
     t.datetime "created_at", null: false
@@ -36,7 +36,7 @@ ActiveRecord::Schema.define(version: 20151128345845) do
   create_table "ties", force: :cascade do |t|
     t.string   "image_url"
     t.string   "link_url"
-    t.integer  "category"
+    t.integer  "color"
     t.boolean  "tidimi"
     t.boolean  "misogi"
     t.datetime "created_at", null: false

@@ -175,8 +175,8 @@ div#store_area {
 .palette {
   position: relative;
   overflow: hidden;
-  width: 800px;
-  height: 800px;
+  /* width: 800px; */
+  /* height: 800px; */
   padding: 0;
   border-radius: 50%;
   list-style: none;
@@ -289,8 +289,8 @@ div#store_area {
   z-index: 10;
   top: 50%;
   left: 50%;
-  width: 700px;
-  height: 700px;
+  /* width: 700px; */
+  /* height: 700px; */
   transform: translatex(-50%)translateY(-50%);
   /* background: #333333; */
   /* background-image: url("akiwomankitu.jpg"); */
