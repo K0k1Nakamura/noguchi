@@ -54,6 +54,7 @@ Main Components
   width: 180px;
   margin: 0 auto;
   @include clearfix;
+  z-index: 30;
 
   > li {
     overflow: hidden;
