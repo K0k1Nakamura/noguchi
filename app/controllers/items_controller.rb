@@ -1,6 +1,6 @@
 class ItemsController < ApplicationController
   def jackets
-    @items = Jacket.where(color: 0)
+    @items = Jacket.where(color: params[:id])
   end
 
   def api

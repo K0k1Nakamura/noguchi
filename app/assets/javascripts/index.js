@@ -142,7 +142,8 @@ msg: "key incorrect!"
     };
 
     ColorLock.prototype.setUserInput = function setUserInput(e) {
-      console.log(e.target.dataset.key);
+      var url = "/jackets/" + e.target.dataset.key;
+      location.href = url;
       // $.ajax({
       //   url: 'items/api'
       // }).done(function(res){
