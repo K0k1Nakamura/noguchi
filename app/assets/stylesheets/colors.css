@@ -206,7 +206,7 @@ div#store_area {
   cursor: pointer;
 }
 .color.n1 {
-  background: #E91E63;
+  background: #DC3C30;
   transform: rotate(36deg) skewx(54deg);
 }
 .color.n1:hover {
@@ -215,7 +215,7 @@ div#store_area {
   cursor: pointer;
 }
 .color.n2 {
-  background: #9C27B0;
+  background: #6F1B7D;
   transform: rotate(72deg) skewx(54deg);
 }
 .color.n2:hover {
@@ -224,7 +224,7 @@ div#store_area {
   cursor: pointer;
 }
 .color.n3 {
-  background: #673AB7;
+  background: #512D90;
   transform: rotate(108deg) skewx(54deg);
 }
 .color.n3:hover {
@@ -233,7 +233,7 @@ div#store_area {
   cursor: pointer;
 }
 .color.n4 {
-  background: #3F51B5;
+  background: #314090;
   transform: rotate(144deg) skewx(54deg);
 }
 .color.n4:hover {
@@ -242,7 +242,7 @@ div#store_area {
   cursor: pointer;
 }
 .color.n5 {
-  background: #2196F3;
+  background: #1C7ECC;
   transform: rotate(180deg) skewx(54deg);
 }
 .color.n5:hover {
@@ -251,7 +251,7 @@ div#store_area {
   cursor: pointer;
 }
 .color.n6 {
-  background: #009688;
+  background: #01796E;
   transform: rotate(216deg) skewx(54deg);
 }
 .color.n6:hover {
@@ -260,7 +260,7 @@ div#store_area {
   cursor: pointer;
 }
 .color.n7 {
-  background: #8BC34A;
+  background: #74A23F;
   transform: rotate(252deg) skewx(54deg);
 }
 .color.n7:hover {
@@ -269,7 +269,7 @@ div#store_area {
   cursor: pointer;
 }
 .color.n8 {
-  background: #FFC107;
+  background: #E2AB05;
   transform: rotate(288deg) skewx(54deg);
 }
 .color.n8:hover {
@@ -278,7 +278,7 @@ div#store_area {
   cursor: pointer;
 }
 .color.n9 {
-  background: #FF9800;
+  background: #DA8303;
   transform: rotate(324deg) skewx(54deg);
 }
 .color.n9:hover {
@@ -299,8 +299,8 @@ div#store_area {
   /* background-image: url("akiwomankitu.jpg"); */
   /* background-size: cover; */
   /* background-attachment: fixed; */
-  background-color: #fff;
-  /* background: radial-gradient(ellipse farthest-side at center, #ffffff, #cccccc); */
+  /* background-color: #fff; */
+  background: radial-gradient(ellipse farthest-side at center, #dddddd, #bbbbbb);
   /* -webkit-filter: blur(3px); */
   border-radius: 50%;
   /* box-shadow: 0 0 20px -5px rgba(0, 0, 0, 0.2); */
