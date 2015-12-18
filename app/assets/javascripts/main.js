@@ -110,16 +110,36 @@ jQuery(document).ready(function($) {
 
     $('.cd-item-info').empty();
 
-    if( selectedItem.data('tidimi') ) {
-      var tidimi = $('<a href="#" class="cd-new-price"><img src="assets/wa_btn.gif" alt=""></a>');
-      tidimi.appendTo('.cd-item-info');
-      setTimeout(function(){ tidimi.addClass('is-visible'); }, 100);
+    if( selectedItem.data('h') ) {
+      var h = $('<a href="/honshiozawa" class="cd-new-price"><img src="assets/honshiozawa.png" alt=""></a>');
+      h.appendTo('.cd-item-info');
+      setTimeout(function(){ h.addClass('is-visible'); }, 100);
+    }
+    if( selectedItem.data('st') ) {
+      var st = $('<a href="/shiozawatsumugi" class="cd-new-price"><img src="assets/siozawatsumugi.png" alt=""></a>');
+      st.appendTo('.cd-item-info');
+      setTimeout(function(){ st.addClass('is-visible'); }, 100);
+    }
+    if( selectedItem.data('tg') ) {
+      var tg = $('<a href="/tokamachigasuri" class="cd-new-price"><img src="assets/tokamachitshmugi.png" alt=""></a>');
+      tg.appendTo('.cd-item-info');
+      setTimeout(function(){ tg.addClass('is-visible'); }, 100);
+    }
+    if( selectedItem.data('tc') ) {
+      var tc = $('<a href="tokamachiakashichidimi" class="cd-new-price"><img src="assets/tokamaci2.png" alt=""></a>');
+      tc.appendTo('.cd-item-info');
+      setTimeout(function(){ tc.addClass('is-visible'); }, 100);
+    }
+    if( selectedItem.data('oc') ) {
+      var oc = $('<a href="ojiyachijimi" class="cd-new-price"><img src="assets/ojiyadhijimi.png" alt=""></a>');
+      oc.appendTo('.cd-item-info');
+      setTimeout(function(){ oc.addClass('is-visible'); }, 100);
+    }
+    if( selectedItem.data('ot') ) {
+      var ot = $('<a href="ojiyathumugi" class="cd-new-price"><img src="assets/ojiya2.png" alt=""></a>');
+      ot.appendTo('.cd-item-info');
+      setTimeout(function(){ ot.addClass('is-visible'); }, 100);
     }
 
-    if( selectedItem.data('misogi') ) {
-      var misogi = $('<a href="#" class="cd-new-price"><img src="assets/wa_btn.gif" alt=""></a>');
-      misogi.appendTo('.cd-item-info');
-      setTimeout(function(){ misogi.addClass('is-visible'); }, 100);
-    }
   }
 });

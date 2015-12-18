@@ -361,8 +361,8 @@ responsive
     height: 700px;
 }
 @include MQ(L) {
-  width: 800px;
-  height: 800px;
+  width: 700px;
+  height: 700px;
 }
 }
 
@@ -374,7 +374,7 @@ responsive
     height: 600px;
 }
 @include MQ(L) {
-  width: 700px;
-  height: 700px;
+  width: 600px;
+  height: 600px;
 }
 }

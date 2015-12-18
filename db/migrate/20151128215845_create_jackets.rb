@@ -4,8 +4,12 @@ class CreateJackets < ActiveRecord::Migration
       t.string :image_url
       t.string :link_url
       t.integer :color
-      t.boolean :tidimi
-      t.boolean :misogi
+      t.boolean :h
+      t.boolean :st
+      t.boolean :tg
+      t.boolean :tc
+      t.boolean :oc
+      t.boolean :ot
 
       t.timestamps null: false
     end

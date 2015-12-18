@@ -12,8 +12,15 @@ Rails.application.routes.draw do
   get 'ties' => 'items#ties'
   get 'shirts' => 'items#shirts'
 
-  get 'static' => 'static_pages#static_template'
-  # Example of named route that can be invoked with purchase_url(id: product.id)
+  # get 'static' => 'static_pages#static_template'
+
+  get 'honshiozawa' => 'static_pages#honshiozawa'
+  get 'shiozawatsumugi' => 'static_pages#shiozawatsumugi'
+  get 'tokamachigasuri' => 'static_pages#tokamachigasuri'
+  get 'tokamachiakashichidimi' => 'static_pages#tokamachiakashichidimi'
+  get 'ojiyachijimi' => 'static_pages#ojiyachijimi'
+  get 'ojiyathumugi' => 'static_pages#ojiyathumugi'
+  # iiiExample of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 
   # Example resource route (maps HTTP verbs to controller actions automatically):

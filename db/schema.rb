@@ -17,8 +17,12 @@ ActiveRecord::Schema.define(version: 20151128345845) do
     t.string   "image_url"
     t.string   "link_url"
     t.integer  "color"
-    t.boolean  "tidimi"
-    t.boolean  "misogi"
+    t.boolean  "h"
+    t.boolean  "st"
+    t.boolean  "tg"
+    t.boolean  "tc"
+    t.boolean  "oc"
+    t.boolean  "ot"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
