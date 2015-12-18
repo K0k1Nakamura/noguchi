@@ -10,8 +10,19 @@ html {
 
 div#store_area {
   padding-top: 23px;
+
   display: flex;
+   display: -webkit-flex; /* Safari */
+   display: -webkit-box
+   display:-moz-box;
+display:-ms-flexbox;
+
+  -webkit-align-items: center;
   align-items: center;
+  -webkit-box-align:center;
+  -moz-box-align:center;
+  -ms-flex-align:center;
+
   width: 100vw;
   height: 100vh;
   top: 0px;
@@ -58,8 +69,18 @@ div#store_area {
 
 .lock {
   /* display: flex; */
+  -webkit-align-items: center;
   align-items: center;
-  justify-content: center;
+  -webkit-box-align:center;
+  -moz-box-align:center;
+  -ms-flex-align:center;
+
+  -webkit-box-pack:center;
+  -moz-box-pack:center;
+  -ms-flex-pack:center;
+  -webkit-justify-content:center;
+  justify-content:center;
+
   width: 100%;
   height: 100%;
   position: fixed;
@@ -157,9 +178,24 @@ div#store_area {
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center;
+   display: -webkit-flex; /* Safari */
+   display: -webkit-box
+   display:-moz-box;
+display:-ms-flexbox;
+
+  -webkit-align-items: center;
   align-items: center;
+  -webkit-box-align:center;
+  -moz-box-align:center;
+  -ms-flex-align:center;
+
+  -webkit-box-pack:center;
+  -moz-box-pack:center;
+  -ms-flex-pack:center;
+  -webkit-justify-content:center;
+  justify-content:center;
 }
+
 .palette-wrapper.success {
   animation: rotation 1s forwards;
 }
