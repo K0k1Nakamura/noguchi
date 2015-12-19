@@ -357,12 +357,12 @@ responsive
   width: 330px;
   height: 330px;
   @include MQ(M) {
-    width: 630px;
-    height: 630px;
+    width: 680px;
+    height: 680px;
 }
 @include MQ(L) {
-  width: 630px;
-  height: 630px;
+  width: 680px;
+  height: 680px;
 }
 }
 
@@ -370,11 +370,11 @@ responsive
   width: 280px;
   height: 280px;
   @include MQ(M) {
-    width: 520px;
-    height: 520px;
+    width: 580px;
+    height: 580px;
 }
 @include MQ(L) {
-  width: 520px;
-  height: 520px;
+  width: 580px;
+  height: 580px;
 }
 }
