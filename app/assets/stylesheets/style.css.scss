@@ -357,10 +357,10 @@ responsive
   width: 330px;
   height: 330px;
   @include MQ(M) {
-    width: 680px;
-    height: 680px;
+    width: 610px;
+    height: 610px;
 }
-@include MQ(L) {
+@include MQ(XL) {
   width: 680px;
   height: 680px;
 }
@@ -370,10 +370,10 @@ responsive
   width: 280px;
   height: 280px;
   @include MQ(M) {
-    width: 580px;
-    height: 580px;
+    width: 520px;
+    height: 520px;
 }
-@include MQ(L) {
+@include MQ(XL) {
   width: 580px;
   height: 580px;
 }
