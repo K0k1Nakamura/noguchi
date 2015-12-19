@@ -126,17 +126,17 @@ jQuery(document).ready(function($) {
       setTimeout(function(){ tg.addClass('is-visible'); }, 100);
     }
     if( selectedItem.data('tc') ) {
-      var tc = $('<a href="tokamachiakashichidimi" class="cd-new-price"><img src="../assets/tokamaci2.png" alt=""></a>');
+      var tc = $('<a href="/tokamachiakashichidimi" class="cd-new-price"><img src="../assets/tokamaci2.png" alt=""></a>');
       tc.appendTo('.cd-item-info');
       setTimeout(function(){ tc.addClass('is-visible'); }, 100);
     }
     if( selectedItem.data('oc') ) {
-      var oc = $('<a href="ojiyachijimi" class="cd-new-price"><img src="../assets/ojiyadhijimi.png" alt=""></a>');
+      var oc = $('<a href="/ojiyachijimi" class="cd-new-price"><img src="../assets/ojiyadhijimi.png" alt=""></a>');
       oc.appendTo('.cd-item-info');
       setTimeout(function(){ oc.addClass('is-visible'); }, 100);
     }
     if( selectedItem.data('ot') ) {
-      var ot = $('<a href="ojiyathumugi" class="cd-new-price"><img src="../assets/ojiya2.png" alt=""></a>');
+      var ot = $('<a href="/ojiyathumugi" class="cd-new-price"><img src="../assets/ojiya2.png" alt=""></a>');
       ot.appendTo('.cd-item-info');
       setTimeout(function(){ ot.addClass('is-visible'); }, 100);
     }
