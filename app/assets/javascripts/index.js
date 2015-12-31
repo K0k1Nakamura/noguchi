@@ -233,7 +233,7 @@ window.onload = function () {
   $(".cd-item-info img").css("height", size*0.1 + "px");
 
   if ( size < 366 ) {
-    $(".cd-item-info img").remove();
+    $(".cd-item-info").empty();
   }
 
 
@@ -259,7 +259,7 @@ $(window).resize(function () {
   $(".cd-item-info img").css("height", size*0.1 + "px");
 
   if ( size < 366 ) {
-    $(".cd-item-info img").remove();
+    $(".cd-item-info").empty();
   }
 });
 

@@ -141,5 +141,15 @@ jQuery(document).ready(function($) {
       setTimeout(function(){ ot.addClass('is-visible'); }, 100);
     }
 
+  size = ($(window).width() < $(window).height())
+    ? $(window).width()
+    : $(window).height();
+
+  size *= 0.8;
+
+  if ( size < 366 ) {
+    $(".cd-item-info").empty();
+  }
+
   }
 });
