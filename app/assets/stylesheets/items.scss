@@ -18,6 +18,7 @@ html {
 
 div#store_area {
   position: fixed;
+  margin-top: 23px;
   width: 100%;
   height: 100%;
 }
@@ -97,7 +98,8 @@ div#store_area {
   bottom: 0;
   right: 0;
   left: 0;
-  height: 450px;
+  // レスポンシブ
+  // height: 450px;
   position: absolute;
   @include clearfix;
   z-index: 30;
@@ -248,7 +250,7 @@ div#store_area {
 .cd-dots {
   /* not visible in the html document - created using jQuery */
   position: absolute;
-  bottom: 95px;
+  bottom: 20%;
   @include center(x); // see partials > _mixins.scss
   @include clearfix;
   padding: .2em;
@@ -302,11 +304,14 @@ div#store_area {
 }
 
 .cd-item-info {
-  height: 90px;
-  line-height: 90px;
+  // height: 90px;
+  // line-height: 90px;
   padding: 0 2em;
   text-align: center;
   @include clearfix;
+
+  // レスポンシブ
+  img{height: 39px;}
 
   b, .cd-price, .cd-new-price {
     font-weight: bold;
@@ -486,28 +491,28 @@ responsive
 
 -------------------------------- */
 
-.palette {
-  width: 330px;
-  height: 330px;
-  @include MQ(M) {
-    width: 610px;
-    height: 610px;
-}
-@include MQ(XL) {
-  width: 680px;
-  height: 680px;
-}
-}
+// .palette {
+//   width: 330px;
+//   height: 330px;
+//   @include MQ(M) {
+//     width: 610px;
+//     height: 610px;
+// }
+// @include MQ(XL) {
+//   width: 680px;
+//   height: 680px;
+// }
+// }
 
-.btn{
-  width: 280px;
-  height: 280px;
-  @include MQ(M) {
-    width: 520px;
-    height: 520px;
-}
-@include MQ(XL) {
-  width: 580px;
-  height: 580px;
-}
-}
+// .btn{
+//   width: 280px;
+//   height: 280px;
+//   @include MQ(M) {
+//     width: 520px;
+//     height: 520px;
+// }
+// @include MQ(XL) {
+//   width: 580px;
+//   height: 580px;
+// }
+// }

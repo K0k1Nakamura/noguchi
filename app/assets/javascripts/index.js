@@ -210,5 +210,52 @@ msg: "key incorrect!"
   })();
 
   var colorLock = new ColorLock();
-  
 });
+
+
+window.onload = function () {
+  size = ($(window).width() < $(window).height())
+    ? $(window).width()
+    : $(window).height();
+
+  size *= 0.8;
+
+  $(".palette").css("height", size + "px");
+  $(".palette").css("width", size + "px");
+
+  $(".btn").css("height", size*0.8 + "px");
+  $(".btn").css("width", size*0.8 + "px");
+
+  $(".cd-gallery").css("height", size*0.7 + "px");
+  $(".cd-gallery").css("width", size*0.7 + "px");
+
+  $(".cd-item-info").css("height", size*0.1 + "px");
+  $(".cd-item-info img").css("height", size*0.1 + "px");
+
+  if ( size < 366 ) {
+    $(".cd-item-info img").remove();
+  }
+
+
+}
+
+$(window).resize(function () {
+  size = ($(window).width() < $(window).height())
+    ? $(window).width()
+    : $(window).height();
+
+  size *= 0.8;
+
+  $(".palette").css("height", size + "px");
+  $(".palette").css("width", size + "px");
+
+  $(".btn").css("height", size*0.8 + "px");
+  $(".btn").css("width", size*0.8 + "px");
+
+  $(".cd-gallery").css("height", size*0.7 + "px");
+  $(".cd-gallery").css("width", size*0.7 + "px");
+
+  $(".cd-item-info").css("height", size*0.1 + "px");
+  $(".cd-item-info img").css("height", size*0.1 + "px");
+});
+
