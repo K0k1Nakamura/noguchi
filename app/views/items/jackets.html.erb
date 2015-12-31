@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="no-js">
+<html lang="ja" class="no-js">
   <head>
     <title>Thousand Jacket</title>
     <meta charset="UTF-8">
@@ -10,8 +10,8 @@
     <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
 
     <!-- <link rel="stylesheet" href="../assets/reset.css"> <!&#45;&#45; CSS reset &#45;&#45;> -->
-    <link rel="stylesheet" href="../assets/style.css"> <!-- Resource style -->
-    <link rel="stylesheet" href="../assets/colors.css"> <!-- Resource style -->
+    <!-- <link rel="stylesheet" href="../assets/style.css"> <!&#45;&#45; Resource style &#45;&#45;> -->
+    <!-- <link rel="stylesheet" href="../assets/colors.css"> <!&#45;&#45; Resource style &#45;&#45;> -->
     <!-- <link rel="stylesheet" href="../assets/header.css"> <!&#45;&#45; Resource style &#45;&#45;> -->
 
   </head>
@@ -24,17 +24,7 @@
       <div class="bg"><div class="pattern"></div></div>
 
       <div class="lock">
-        <!-- <div class="user&#45;input&#45;wrapper"> -->
-          <!--   <div class="msg&#45;wrapper"> -->
-            <!--     <p id="msg_register" class="msg">init your color lock (4~8 colors)</p> -->
-            <!--     <p id="msg_input" class="msg hide">enter your color key</p> -->
-            <!--   </div> -->
-          <!--   <div id="user_input" class="user&#45;input"> -->
-            <!--     <!&#45;&#45;.code.code0&#45;&#45;> -->
-            <!--   </div> -->
-          <!--   <p id="hint" class="hint">hint</p> -->
-          <!-- </div> -->
-        <div id="palette_wrapper" class="palette-wrapper">
+        <div class="palette-wrapper">
           <ol id="palette" class="palette">
             <li data-key='0' class="color n0"></li>
             <li data-key='1' class="color n1"></li>
@@ -51,20 +41,20 @@
         </div>
       </div>
 
-      <ul class="cd-gallery">
-        <li>
-          <span>
-            <ul class="cd-item-wrapper">
-              <% @items.each.with_index(0) do |item, index| %>
-                <li class="<%= give_class_to_li(index)%>"
-                  <%= give_data_to_li(item) %>>
-                  <a href="<%= item.link_url %>">
-                    <img src="<%= image_path(item.image_url) %>" alt="Preview image">
-                  </a>
-                </li>
-              <% end %>
-            </ul> <!-- cd-item-wrapper -->
-          </span>
+        <ul class="cd-gallery">
+          <li>
+            <span>
+              <ul class="cd-item-wrapper">
+                <% @items.each.with_index(0) do |item, index| %>
+                  <li class="<%= give_class_to_li(index)%>"
+                    <%= give_data_to_li(item) %>>
+                    <a href="<%= item.link_url %>">
+                      <img src="<%= image_path(item.image_url) %>" alt="Preview image">
+                    </a>
+                  </li>
+                <% end %>
+              </ul> <!-- cd-item-wrapper -->
+            </span>
 
           <div class="cd-item-info">
             <!-- <b><a href="#0"></a></b> -->
@@ -72,10 +62,7 @@
           </div> <!-- cd-item-info -->
         </li>
       </ul>
-    </div>
 
-    <!-- <script src="../assets/jquery&#45;2.1.1.js"></script> -->
-    <!-- <script src="../assets/jquery.mobile.min.js"></script> -->
     <!-- <script src="../assets/main.js"></script> <!&#45;&#45; Resource jQuery &#45;&#45;> -->
     <!-- <script src="../assets/modernizr.js"></script> <!&#45;&#45; Resource jQuery &#45;&#45;> -->
     <!-- <script src="../assets/index.js"></script> <!&#45;&#45; Resource jQuery &#45;&#45;> -->

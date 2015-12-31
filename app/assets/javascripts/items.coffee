@@ -5,4 +5,3 @@
 //= require main
 //= require index
 //= require modernizr
-//= require device.min

@@ -14,4 +14,3 @@
 //= require jquery.mobile.min
 //= require prefixfree.min
 //= require header
-

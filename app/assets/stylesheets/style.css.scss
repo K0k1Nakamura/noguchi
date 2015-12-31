@@ -12,14 +12,11 @@ Primary style
 
 -------------------------------- */
 
-*, *::after, *::before {
-  @include box-sizing(border-box);
-}
 
-html {
-  height: 100%;
-  font-size: 62.5%;
-}
+// html {
+//   height: 100%;
+//   font-size: 62.5%;
+// }
 
 // body {
 //         height: 100%;
@@ -31,10 +28,10 @@ html {
 // 	background-color: $color-3;
 // }
 
-a {
-  color: $color-2;
-  text-decoration: none;
-}
+// a {
+//   color: $color-2;
+//   text-decoration: none;
+// }
 
 /* --------------------------------
 
@@ -50,60 +47,60 @@ Main Components
 //   height: 100vh;
 // }
 
-.cd-gallery {
-  width: 180px;
-  margin: 0 auto;
-  @include clearfix;
-  z-index: 30;
-
-  > li {
-    overflow: hidden;
-    position: relative;
-    // top: 50vh;
-    // transform: translateY(-50%);
-    // background: $color-5;
-    // border-radius: .25em;
-    // box-shadow: 0 1px 4px rgba(#000, .1);
-
-    > a {
-      display: block;
-              }
-      }
-
-      @include MQ(M) {
-        width: 450px;
-        > li {
-          // @include column(.48); // see partials > _layout.scss
-          // margin-right: 4%;
-          &:nth-of-type(2n) {
-            margin-right: 0;
-                      }
-              }
-      }
-
-      @include MQ(L) {
-        width: 450px;
-        > li {
-
-          .no-touch &:hover .cd-dots li.selected a {
-            /* Slider dots - change background-color of the selected dot when hover over the its parent list item */
-            background: $color-1;
-            border-color: $color-1;
-                      }
-
-                      .no-touch &:hover .cd-dots a {
-                        /* Slider dots - change dot border-color when hover over the its parent list item */
-                        border-color: lighten($color-1, 40%);
-                      }
-
-                      .no-touch &:hover li.move-right,
-                      .no-touch &:hover li.move-left {
-                        /* show preview items when hover over the its parent list item */
-                        opacity: 0.3;
-                      }
-              }
-      }
-}
+// .cd-gallery {
+  // width: 180px;
+  // margin: 0 auto;
+  // @include clearfix;
+  // z-index: 30;
+  //
+  // > li {
+  //   overflow: hidden;
+  //   position: relative;
+  //   // top: 50vh;
+  //   // transform: translateY(-50%);
+  //   // background: $color-5;
+  //   // border-radius: .25em;
+  //   // box-shadow: 0 1px 4px rgba(#000, .1);
+  //
+  //   > a {
+  //     display: block;
+  //             }
+  //     }
+  //
+  //     @include MQ(M) {
+  //       width: 450px;
+  //       > li {
+  //         // @include column(.48); // see partials > _layout.scss
+  //         // margin-right: 4%;
+  //         &:nth-of-type(2n) {
+  //           margin-right: 0;
+  //                     }
+  //             }
+  //     }
+  //
+  //     @include MQ(L) {
+  //       width: 450px;
+  //       > li {
+  //
+  //         .no-touch &:hover .cd-dots li.selected a {
+  //           /* Slider dots - change background-color of the selected dot when hover over the its parent list item */
+  //           background: $color-1;
+  //           border-color: $color-1;
+  //                     }
+  //
+  //                     .no-touch &:hover .cd-dots a {
+  //                       /* Slider dots - change dot border-color when hover over the its parent list item */
+  //                       border-color: lighten($color-1, 40%);
+  //                     }
+  //
+  //                     .no-touch &:hover li.move-right,
+  //                     .no-touch &:hover li.move-left {
+  //                       /* show preview items when hover over the its parent list item */
+  //                       opacity: 0.3;
+  //                     }
+  //             }
+  //     }
+// }
 
 .cd-item-wrapper {
   position: relative;

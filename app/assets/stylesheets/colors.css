@@ -1,60 +1,39 @@
-html {
-  box-sizing: border-box;
-}
+/* html { */
+/*   box-sizing: border-box; */
+/* } */
 
-*,
-*:after,
-*:before {
-  box-sizing: inherit;
-}
+/* *, */
+/* *:after, */
+/* *:before { */
+/*   box-sizing: inherit; */
+/* } */
 
-div#store_area {
-  padding-top: 23px;
+/* div#store_area { */
+/* } */
 
-  display: flex;
-   display: -webkit-flex; /* Safari */
-   display: -webkit-box
-   display:-moz-box;
-display:-ms-flexbox;
+/* .bg { */
+/*   position: fixed; */
+/*   background-image: url("akiwomankitu.jpg"); */
+/*   background-size: cover; */
+/*   background-attachment: fixed; */
+/*   /* -webkit-filter: blur(2px); */ */
+/*   width: 100vw; */
+/*   height: 100vh; */
+/*   top: 0px; */
+/*   z-index: -100; */
+/* } */
 
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-box-align:center;
-  -moz-box-align:center;
-  -ms-flex-align:center;
-
-  width: 100vw;
-  height: 100vh;
-  top: 0px;
-  /* justify-content: center; */
-  /* background: radial-gradient(ellipse farthest-side at center, #ffffff, #cccccc); */
-  color: #b3b3b3;
-  font-family: monaco, monospace;
-}
-
-.bg {
-  position: fixed;
-  background-image: url("akiwomankitu.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  /* -webkit-filter: blur(2px); */
-  width: 100vw;
-  height: 100vh;
-  top: 0px;
-  z-index: -100;
-}
-
-.pattern {
-    background-image:url(pattern.png);
-    background-repeat: repeat;
-    background-attachment:scroll;
-    width:100%;
-    height:100%;
-    position:absolute;
-    top:0;
-    left:0
-}
-
+/* .pattern { */
+/*     background-image:url(pattern.png); */
+/*     background-repeat: repeat; */
+/*     background-attachment:scroll; */
+/*     width:100%; */
+/*     height:100%; */
+/*     position:absolute; */
+/*     top:0; */
+/*     left:0 */
+/* } */
+/*  */
 .overlay {
   width: 100vw;
   height: 100vh;
@@ -67,28 +46,28 @@ display:-ms-flexbox;
   /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', endColorstr='#66000000',GradientType=0 ); /* IE6-9 */ */
 }
 
-.lock {
+/* .lock { */
   /* display: flex; */
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-box-align:center;
-  -moz-box-align:center;
-  -ms-flex-align:center;
+  /* -webkit-align-items: center; */
+  /* align-items: center; */
+  /* -webkit-box-align:center; */
+  /* -moz-box-align:center; */
+  /* -ms-flex-align:center; */
+  /*  */
+  /* -webkit-box-pack:center; */
+  /* -moz-box-pack:center; */
+  /* -ms-flex-pack:center; */
+  /* -webkit-justify-content:center; */
+  /* justify-content:center; */
 
-  -webkit-box-pack:center;
-  -moz-box-pack:center;
-  -ms-flex-pack:center;
-  -webkit-justify-content:center;
-  justify-content:center;
-
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 23px;
+  /* width: 100%; */
+  /* height: 100%; */
+  /* position: fixed; */
+  /* top: 23px; */
   /* -webkit-filter: blur(1px); */
   /* background: #333333; */
   /* box-shadow: 0 0 30px #2e2e2e inset; */
-}
+/* } */
 
 /* .user-input-wrapper { */
 /*   width: 300px; */
@@ -174,175 +153,152 @@ display:-ms-flexbox;
 /*   opacity: 1; */
 /* } */
 /*  */
-.palette-wrapper {
-  width: 100%;
-  height: 100%;
-  display: flex;
-   display: -webkit-flex; /* Safari */
-   display: -webkit-box
-   display:-moz-box;
-display:-ms-flexbox;
+/* .palette-wrapper { */
+  /* width: 100%; */
+  /* height: 100%; */
+  
+/*    display: -webkit-box */
+/*    display:-moz-box; */
+/* display:-ms-flexbox; */
+/*  */
+/*   -webkit-align-items: center; */
+/*   align-items: center; */
+/*   -webkit-box-align:center; */
+/*   -moz-box-align:center; */
+/*   -ms-flex-align:center; */
+/*  */
+/*   -webkit-box-pack:center; */
+/*   -moz-box-pack:center; */
+/*   -ms-flex-pack:center; */
+/*   -webkit-justify-content:center; */
+/*   justify-content:center; */
+/* } */
 
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-box-align:center;
-  -moz-box-align:center;
-  -ms-flex-align:center;
+/* .palette-wrapper.success { */
+/*   animation: rotation 1s forwards; */
+/* } */
+/*  */
+/* @keyframes rotation { */
+/*   50% { */
+/*     -webkit-filter: grayscale(100%); */
+/*     filter: grayscale(100%); */
+/*   } */
+/*   100% { */
+/*     -webkit-filter: grayscale(0%); */
+/*     filter: grayscale(0%); */
+/*     transform: rotate(360deg); */
+/*   } */
+/* } */
 
-  -webkit-box-pack:center;
-  -moz-box-pack:center;
-  -ms-flex-pack:center;
-  -webkit-justify-content:center;
-  justify-content:center;
-}
+/* .palette { */
+/*   position: relative; */
+/*   overflow: hidden; */
+/*   /* width: 800px; */ */
+/*   /* height: 800px; */ */
+/*   padding: 0; */
+/*   border-radius: 50%; */
+/*   list-style: none; */
+/* } */
 
-.palette-wrapper.success {
-  animation: rotation 1s forwards;
-}
+/* .color { */
+/*   position: absolute; */
+/*   top: 50%; */
+/*   left: 50%; */
+/*   background: #555; */
+/*   width: 2000px; */
+/*   height: 2000px; */
+/*   transform-origin: 0% 0%; */
+/*   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); */
+/*   transition: all 0.3s; */
+/* } */
+/* .color.n0 { */
+/*   background: #F44336; */
+/*   transform: rotate(0deg) skewx(54deg); */
+/* } */
+/* .color.n0:hover { */
+/*   background: #EF5350; */
+/*   z-index: 10; */
+/*   cursor: pointer; */
+/* } */
+/* .color.n1 { */
+/*   background: #DC3C30; */
+/*   transform: rotate(36deg) skewx(54deg); */
+/* } */
+/* .color.n1:hover { */
+/*   background: #EC407A; */
+/*   z-index: 10; */
+/*   cursor: pointer; */
+/* } */
+/* .color.n2 { */
+/*   background: #6F1B7D; */
+/*   transform: rotate(72deg) skewx(54deg); */
+/* } */
+/* .color.n2:hover { */
+/*   background: #AB47BC; */
+/*   z-index: 10; */
+/*   cursor: pointer; */
+/* } */
+/* .color.n3 { */
+/*   background: #512D90; */
+/*   transform: rotate(108deg) skewx(54deg); */
+/* } */
+/* .color.n3:hover { */
+/*   background: #7E57C2; */
+/*   z-index: 10; */
+/*   cursor: pointer; */
+/* } */
+/* .color.n4 { */
+/*   background: #314090; */
+/*   transform: rotate(144deg) skewx(54deg); */
+/* } */
+/* .color.n4:hover { */
+/*   background: #5C6BC0; */
+/*   z-index: 10; */
+/*   cursor: pointer; */
+/* } */
+/* .color.n5 { */
+/*   background: #1C7ECC; */
+/*   transform: rotate(180deg) skewx(54deg); */
+/* } */
+/* .color.n5:hover { */
+/*   background: #42A5F5; */
+/*   z-index: 10; */
+/*   cursor: pointer; */
+/* } */
+/* .color.n6 { */
+/*   background: #01796E; */
+/*   transform: rotate(216deg) skewx(54deg); */
+/* } */
+/* .color.n6:hover { */
+/*   background: #26A69A; */
+/*   z-index: 10; */
+/*   cursor: pointer; */
+/* } */
+/* .color.n7 { */
+/*   background: #74A23F; */
+/*   transform: rotate(252deg) skewx(54deg); */
+/* } */
+/* .color.n7:hover { */
+/*   background: #9CCC65; */
+/*   z-index: 10; */
+/*   cursor: pointer; */
+/* } */
+/* .color.n8 { */
+/*   background: #E2AB05; */
+/*   transform: rotate(288deg) skewx(54deg); */
+/* } */
+/* .color.n8:hover { */
+/*   background: #FFCA28; */
+/*   z-index: 10; */
+/*   cursor: pointer; */
+/* } */
+/* .color.n9 { */
+/*   background: #DA8303; */
+/*   transform: rotate(324deg) skewx(54deg); */
+/* } */
+/* .color.n9:hover { */
+/*   background: #FFA726; */
+/*   z-index: 10; */
+/*   cursor: pointer; */
+/* } */
 
-@keyframes rotation {
-  50% {
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-  }
-  100% {
-    -webkit-filter: grayscale(0%);
-    filter: grayscale(0%);
-    transform: rotate(360deg);
-  }
-}
-.palette {
-  position: relative;
-  overflow: hidden;
-  /* width: 800px; */
-  /* height: 800px; */
-  padding: 0;
-  border-radius: 50%;
-  list-style: none;
-}
-
-.color {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  background: #555;
-  width: 2000px;
-  height: 2000px;
-  transform-origin: 0% 0%;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s;
-}
-.color.n0 {
-  background: #F44336;
-  transform: rotate(0deg) skewx(54deg);
-}
-.color.n0:hover {
-  background: #EF5350;
-  z-index: 10;
-  cursor: pointer;
-}
-.color.n1 {
-  background: #DC3C30;
-  transform: rotate(36deg) skewx(54deg);
-}
-.color.n1:hover {
-  background: #EC407A;
-  z-index: 10;
-  cursor: pointer;
-}
-.color.n2 {
-  background: #6F1B7D;
-  transform: rotate(72deg) skewx(54deg);
-}
-.color.n2:hover {
-  background: #AB47BC;
-  z-index: 10;
-  cursor: pointer;
-}
-.color.n3 {
-  background: #512D90;
-  transform: rotate(108deg) skewx(54deg);
-}
-.color.n3:hover {
-  background: #7E57C2;
-  z-index: 10;
-  cursor: pointer;
-}
-.color.n4 {
-  background: #314090;
-  transform: rotate(144deg) skewx(54deg);
-}
-.color.n4:hover {
-  background: #5C6BC0;
-  z-index: 10;
-  cursor: pointer;
-}
-.color.n5 {
-  background: #1C7ECC;
-  transform: rotate(180deg) skewx(54deg);
-}
-.color.n5:hover {
-  background: #42A5F5;
-  z-index: 10;
-  cursor: pointer;
-}
-.color.n6 {
-  background: #01796E;
-  transform: rotate(216deg) skewx(54deg);
-}
-.color.n6:hover {
-  background: #26A69A;
-  z-index: 10;
-  cursor: pointer;
-}
-.color.n7 {
-  background: #74A23F;
-  transform: rotate(252deg) skewx(54deg);
-}
-.color.n7:hover {
-  background: #9CCC65;
-  z-index: 10;
-  cursor: pointer;
-}
-.color.n8 {
-  background: #E2AB05;
-  transform: rotate(288deg) skewx(54deg);
-}
-.color.n8:hover {
-  background: #FFCA28;
-  z-index: 10;
-  cursor: pointer;
-}
-.color.n9 {
-  background: #DA8303;
-  transform: rotate(324deg) skewx(54deg);
-}
-.color.n9:hover {
-  background: #FFA726;
-  z-index: 10;
-  cursor: pointer;
-}
-
-.btn {
-  position: absolute;
-  z-index: 10;
-  top: 50%;
-  left: 50%;
-  /* width: 700px; */
-  /* height: 700px; */
-  transform: translatex(-50%)translateY(-50%);
-  /* background: #333333; */
-  /* background-image: url("akiwomankitu.jpg"); */
-  /* background-size: cover; */
-  /* background-attachment: fixed; */
-  /* background-color: #fff; */
-  background: radial-gradient(ellipse farthest-side at center, #dddddd, #bbbbbb);
-  /* -webkit-filter: blur(3px); */
-  border-radius: 50%;
-  /* box-shadow: 0 0 20px -5px rgba(0, 0, 0, 0.2); */
-}
-
-.btn.hide {
-  visibility: hidden;
-  opacity: 0;
-}
