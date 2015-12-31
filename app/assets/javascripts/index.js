@@ -257,5 +257,9 @@ $(window).resize(function () {
 
   $(".cd-item-info").css("height", size*0.1 + "px");
   $(".cd-item-info img").css("height", size*0.1 + "px");
+
+  if ( size < 366 ) {
+    $(".cd-item-info img").remove();
+  }
 });
 
