@@ -250,7 +250,7 @@ div#store_area {
 .cd-dots {
   /* not visible in the html document - created using jQuery */
   position: absolute;
-  bottom: 20%;
+  // bottom: 20%;
   @include center(x); // see partials > _mixins.scss
   @include clearfix;
   padding: .2em;
