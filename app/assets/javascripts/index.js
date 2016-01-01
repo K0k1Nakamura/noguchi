@@ -238,10 +238,10 @@ window.onload = function () {
  
   if ( size < 366 ) {
     if ($(window).width() < $(window).height()) {
-      $(".cd-item-info img").css("height", size*0.13 + "px");
-      $(".cd-item-info").css("margin-top", size*0.32 + "px");
-      $(".cd-item-info").css("margin-bottom", size*0.1 + "px");
-    } else {
+    //   $(".cd-item-info img").css("height", size*0.13 + "px");
+    //   $(".cd-item-info").css("margin-top", size*0.32 + "px");
+    //   $(".cd-item-info").css("margin-bottom", size*0.1 + "px");
+    // } else {
       $(".cd-item-info").empty();
     }
   }
@@ -272,10 +272,10 @@ $(window).resize(function () {
 
   if ( size < 366 ) {
     if ($(window).width() < $(window).height()) {
-      $(".cd-item-info img").css("height", size*0.13 + "px");
-      $(".cd-item-info").css("margin-top", size*0.32 + "px");
-      $(".cd-item-info").css("margin-bottom", size*0.1 + "px");
-    } else {
+    //   $(".cd-item-info img").css("height", size*0.13 + "px");
+    //   $(".cd-item-info").css("margin-top", size*0.32 + "px");
+    //   $(".cd-item-info").css("margin-bottom", size*0.1 + "px");
+    // } else {
       $(".cd-item-info").empty();
     }
   }
