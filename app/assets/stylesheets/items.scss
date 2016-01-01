@@ -431,7 +431,7 @@ div#store_area {
 }
 .color.n4 {
   background: #314090;
-  transform: rotate(144deg) skewx(54deg);
+  @include transform( rotate(144deg) skewx(54deg));
 }
 .color.n4:hover {
   background: #5C6BC0;
@@ -440,7 +440,7 @@ div#store_area {
 }
 .color.n5 {
   background: #1C7ECC;
-  transform: rotate(180deg) skewx(54deg);
+  @include transform( rotate(180deg) skewx(54deg));
 }
 .color.n5:hover {
   background: #42A5F5;
@@ -449,7 +449,7 @@ div#store_area {
 }
 .color.n6 {
   background: #01796E;
-  transform: rotate(216deg) skewx(54deg);
+  @include transform( rotate(216deg) skewx(54deg));
 }
 .color.n6:hover {
   background: #26A69A;
@@ -458,7 +458,7 @@ div#store_area {
 }
 .color.n7 {
   background: #74A23F;
-  transform: rotate(252deg) skewx(54deg);
+  @include transform( rotate(252deg) skewx(54deg));
 }
 .color.n7:hover {
   background: #9CCC65;
@@ -467,7 +467,7 @@ div#store_area {
 }
 .color.n8 {
   background: #E2AB05;
-  transform: rotate(288deg) skewx(54deg);
+  @include transform( rotate(288deg) skewx(54deg));
 }
 .color.n8:hover {
   background: #FFCA28;
@@ -476,7 +476,7 @@ div#store_area {
 }
 .color.n9 {
   background: #DA8303;
-  transform: rotate(324deg) skewx(54deg);
+  @include transform( rotate(324deg) skewx(54deg));
 }
 .color.n9:hover {
   background: #FFA726;
