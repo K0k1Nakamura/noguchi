@@ -101,6 +101,7 @@ ul li {
 .big-background-title {
     /* font-family:'Raleway',sans-serif; */
     font-size:58px;
+    line-height: 58px;
     color:#fff;
     font-weight:300;
     text-transform:uppercase;
