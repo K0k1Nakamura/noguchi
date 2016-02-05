@@ -14,12 +14,12 @@ Rails.application.routes.draw do
 
   # get 'static' => 'static_pages#static_template'
 
-  get 'honshiozawa' => 'static_pages#honshiozawa'
-  get 'shiozawatsumugi' => 'static_pages#shiozawatsumugi'
-  get 'tokamachigasuri' => 'static_pages#tokamachigasuri'
-  get 'tokamachiakashichidimi' => 'static_pages#tokamachiakashichidimi'
-  get 'ojiyachijimi' => 'static_pages#ojiyachijimi'
-  get 'ojiyathumugi' => 'static_pages#ojiyathumugi'
+  get 'history/honshiozawa' => 'static_pages#honshiozawa'
+  get 'history/shiozawatsumugi' => 'static_pages#shiozawatsumugi'
+  get 'history/tokamachigasuri' => 'static_pages#tokamachigasuri'
+  get 'history/tokamachiakashichidimi' => 'static_pages#tokamachiakashichidimi'
+  get 'history/ojiyachijimi' => 'static_pages#ojiyachijimi'
+  get 'history/ojiyathumugi' => 'static_pages#ojiyathumugi'
   # iiiExample of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 
