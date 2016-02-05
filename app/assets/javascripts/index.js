@@ -172,6 +172,8 @@ $(function(){
       setTimeout(function(){ ot.addClass('is-visible'); }, 100);
     }
 
+    resizeContents();
+
     var size = ($(window).width() < $(window).height())
       ? $(window).width()
       : $(window).height();
@@ -190,8 +192,8 @@ $(function(){
     // if ( size < 366 ) {
     //   $(".cd-item-info").empty();
     // }
-
   }
+
 });
 
 //
